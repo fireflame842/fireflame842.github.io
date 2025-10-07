@@ -54,12 +54,25 @@ body::after {
   body::before { animation: none; background-size: auto; filter: blur(20px); }
 }
 
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; transform: rotate(0.001deg); }
   25% { background-position: 50% 30%; }
   50% { background-position: 100% 50%; }
   75% { background-position: 50% 70%; }
   100% { background-position: 0% 50%; }
+}
+
+.neon-pun {
+  color: #00ffff; /* cyan-ish neon color */
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+  opacity: 0.6;       /* slightly visible */
+  font-weight: 600;    /* a bit bolder for glow effect */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.neon-pun:hover {
+  opacity: 1; /* glows brighter on hover */
 }
 
 section {
@@ -158,17 +171,7 @@ section.visible {
   .time-value { font-size: 3.6rem; }
   .time-box { min-width: 170px; min-height: 170px; padding: 2.2rem 1.6rem; }
 }
-.neon-pun {
-  color: #00ffff; /* cyan-ish neon color */
-  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
-  opacity: 0.6;       /* slightly visible */
-  font-weight: 600;    /* a bit bolder for glow effect */
-  transition: opacity 0.5s ease-in-out;
-}
 
-.neon-pun:hover {
-  opacity: 1; /* glows brighter on hover */
-}
 
 
 
