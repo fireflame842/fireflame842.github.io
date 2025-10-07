@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Athu 💙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="bg-custom-black text-custom-white font-sans overflow-x-hidden relative">
+  <div id="password-container" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <div class="bg-gray-900 p-8 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-serif mb-4 text-custom-sky">Enter Password</h2>
+      <input type="password" id="passwordInput" 
+             class="p-2 rounded text-black mb-4 w-64" 
+             placeholder="Password" />
+      <button id="unlockButton"
+              class="bg-custom-sky text-white px-4 py-2 rounded hover:bg-blue-400 transition">
+        Unlock
+      </button>
+    </div>
+  </div>
+
+  <!-- Protected Page Content -->
+  <div id="protected-content" class="hidden">
+
+    <!-- Lil blus -->
+    <div id="orbs"></div>
+
+    <!-- Main Countdown -->
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center relative z-10 motion-section">
+      <h1 class="font-serif text-5xl md:text-6xl mb-4 motion-fade">Counting down to you, Atharv 💙</h1>
+      <p class="text-custom-sky/90 text-lg mb-8 motion-fade">Your 22nd Birthday — 23 October 2025</p>
+
+      <div id="countdown" class="flex flex-wrap justify-center gap-6 font-medium motion-rise">
+        <div class="time-box bg1"><span id="days" class="time-value">00</span><span class="time-label">Days</span></div>
+        <div class="time-box bg2"><span id="hours" class="time-value">00</span><span class="time-label">Hours</span></div>
+        <div class="time-box bg3"><span id="minutes" class="time-value">00</span><span class="time-label">Minutes</span></div>
+        <div class="time-box bg4"><span id="seconds" class="time-value">00</span><span class="time-label">Seconds</span></div>
+      </div>
+      <p class="text-custom-sky/90 text-lg mb-8 motion-fade">You're "turning" 22(please catch the pun)</p>
+      <p id="message" class="mt-10 text-custom-sky text-lg hidden">Happy 22nd Birthday, Atharv! 💙</p>
+    </section>
+
+    <!-- LETTERS -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center motion-section">
+      <h2 class="font-serif text-4xl mb-6 parallax">My Dearest Sunshine,</h2>
+      <p class="max-w-2xl text-lg text-gray-300 leading-relaxed parallax">
+        I love loving you and being loved by you. You really are a ray of sunshine, and a ball of happiness (like a very slim sexy ball, not round at all).
+        I am very grateful to your parents who brought you to this world and everyone and everything else that led to me meeting the wonderful hooman you were when I met you. I hope you only keep growing better and happier.
+        Loads and loads of love for my baby, today and to all the days of the future where we hopefully stare at many starry skies. I want you to know — I’d choose you under every sky.  💙
+      </p>
+    </section>
+
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center motion-section">
+      <h2 class="font-serif text-4xl mb-6 parallax">Hint III</h2>
+      <p class="max-w-2xl text-lg text-gray-300 leading-relaxed parallax">
+        I bought it long ago, when we were just friends,
+        Unsure of the turns our story transcends.
+        It stayed with me through distance and days,
+        Waiting for its time in the sweetest of ways.
+
+        Small and quiet, it carries no words,
+        Just pages waiting for your worlds.
+      </p>
+    </section>
+
+    <!-- Bg Moojic -->
+    <audio id="bg-music" preload="auto" loop hidden>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="https://unpkg.com/@motionone/dom/dist/motion-one.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
