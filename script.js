@@ -1,5 +1,5 @@
 // Password protection
-const correctPasswords = ["athucutiepie", "her"];
+const correctPasswords = ["athucutiepie","iloveneha","her"];
 
 function unlockSite() {
   document.getElementById("password-container").style.display = "none";
